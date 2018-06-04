@@ -37,61 +37,92 @@
     </section>
     <section class="sorting">
       <h2 class="visually-hidden">Сортровка товаров</h2>
-      <!-- Здесь будет форма -->
+      <p>Сортировать:</p>
+      <div class="sort-buttons">
+        <ul class="sort-button-list">
+          <li>
+            <input type="button" value="По цене">
+          </li>
+          <li>
+            <input type="button" value="По цене">
+          </li>
+          <li>
+            <input type="button" value="По цене">
+          </li>
+        </ul>
+        <div class="order-buttons">
+          <input type="button" class="desc-button" value="">
+          <input type="button" class="asc-button" value="">
+        </div>
+      </div>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
       <ul class="template-list">
         <li class="template-item">
-          <h3>Sedona</h3>
-          <p>Информационный сайт для туристов</p>
-          <a class="button" href="#">9 900 руб.</a>
           <img src="img/catalog-sedona.jpeg" width="200" height="400" alt="Вид проекта Sedona">
+          <div class="description-window">
+            <h3>Sedona</h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="template-item">
-          <h3>Pink</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
           <img src="img/catalog-pink.jpeg" width="200" height="400" alt="Вид проекта Pink">
+          <div class="description-window">
+            <h3>Pink</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
         </li>
         <li class="template-item">
-          <h3>Borodinski</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
+          <div class="description-window">
+            <h3>Borodinski</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
           <img src="img/catalog-borodinski.jpeg" width="200" height="400" alt="Вид проекта Borodinski">
         </li>
         <li class="template-item">
-          <h3>Mishka</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
           <img src="img/catalog-mishka.jpeg" width="200" height="400" alt="Вид проекта Mishka">
+          <div class="description-window">
+            <h3>Mishka</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
         </li>
         <li class="template-item">
-          <h3>?</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
           <img src="img/??.jpeg" width="200" height="400" alt="??">
+          <div class="description-window">
+            <h3>?</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
         </li>
         <li class="template-item">
-          <h3>Kvast</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
           <img src="img/catalog-kvast.jpeg" width="200" height="400" alt="Вид проекта Kvast">
+          <div class="description-window">
+            <h3>Kvast</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
         </li>
         <li class="template-item">
-          <h3>?</h3>
-          <p>??</p>
-          <a class="button" href="#">??? руб.</a>
           <img src="img/??.jpeg" width="200" height="400" alt="??">
+          <div class="description-window">
+            <h3>?</h3>
+            <p>??</p>
+            <a class="button" href="#">??? руб.</a>
+          </div>
         </li>
       </ul>
 
       <ul class="pagination-list">
-        <li class="pagination-item-previous">
+        <li class="pagination-item pagination-item-previous">
           <a href="#">Предыдущая</a>
         </li>
-        <li class="pagination-item">
-          <a href="#">1</a>
+        <li class="pagination-item selected">
+          <a>1</a>
         </li>
         <li class="pagination-item">
           <a href="#">2</a>
@@ -99,7 +130,7 @@
         <li class="pagination-item">
           <a href="#">3</a>
         </li>
-        <li class="pagination-item-next">
+        <li class="pagination-item pagination-item-next">
           <a href="#">Следующая</a>
         </li>
       </ul>
@@ -108,26 +139,33 @@
 
   <footer class="main-footer">
     <section class="map">
-      <div class="address"></div>
-      <b>Nerds Design Studio</b>
-      <p>191186, Санкт-Питербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7(812)275-75-75</p>
-      <a class="button" href="#"></a>
+      <div class="address">
+        <b>Nerds Design Studio</b>
+        <p>191186, Санкт-Питербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7(812)275-75-75</p>
+        <a class="button" href="#"></a>
+      </div>
       <img src="img/map.svg" width="100%" height="300" alt="Карта месторасположения офиса">
     </section>
-    <b>Давайте дружить, это выгодно!</b>
-    <p>Скидка 10% для друзей из социальных друзей.</p>
-    <ul class="social-list">
-      <li class="social-item">
-        <a class="social-button" href="#">Вконтакте</a>
-      </li>
-      <li class="social-item">
-        <a class="social-button" href="#">Facebook</a>
-      </li>
-      <li class="social-item">
-        <a class="social-button" href="#">Instagram</a>
-      </li>
-    </ul>
+    <div class="social">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-button" href="#">Вконтакте</a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">Facebook</a>
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">Instagram</a>
+        </li>
+      </ul>
+      <div class="social-right-block">
+        <p>
+          <b>Давайте дружить, это выгодно!</b>
+        </p>
+        <p>Скидка 10% для друзей из социальных друзей.</p>
+      </div>
+    </div>
   </footer>
 </body>
 
