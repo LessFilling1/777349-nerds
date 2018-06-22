@@ -33,7 +33,77 @@
   <main class="main-page">
     <section class="filtration">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!-- Здесь будет форма -->
+      <form action="/getProjects" method="post" oninput="rangeMinOut.value=rangeMin.value; rangeMaxOut.value=rangeMax.value;">
+        <label class="cost">Стоимость:
+          <input name="rangeMin" value="0" min="0" max="20000" step="200" type="range">
+          <input name="rangeMax" value="15000" min="0" max="20000" step="200" type="range">
+          <label>От
+            <output name="rangeMinOut">0</output>
+          </label>
+          <label>До
+            <output name="rangeMaxOut">15000</output>
+          </label>
+        </label>
+        <fieldset class="grid">
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="grid-type" value="adaptive" id="filter-grid-adaptive" checked>
+              <label for="filter-grid-adaptive">
+                Адаптивная
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="grid-type" value="fixed" id="filter-grid-fixed">
+              <label for="filter-grid-fixed">
+                Фиксировання
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="grid-type" value="flexed" id="filter-grid-flexed">
+              <label for="filter-grid-flexed">
+                Резиновая
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="features">
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="slider" id="filter-features-slider" checked>
+              <label for="filter-features-slider">
+                Слайдер
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="advantages" id="filter-features-advantages">
+              <label for="filter-features-advantages">
+                Блок преимуществ
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="news" id="filter-features-news" checked>
+              <label for="filter-features-news">
+                Новости
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-features-gallery">
+              <label for="filter-features-gallery">
+                Галерея
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="cart" id="filter-features-cart">
+              <label for="filter-features-cart">
+                Корзина
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section class="sorting">
       <h2 class="visually-hidden">Сортровка товаров</h2>
@@ -41,18 +111,18 @@
       <div class="sort-buttons">
         <ul class="sort-button-list">
           <li>
-            <input type="button" value="По цене">
+            <button class="by-cost">По цене</button>
           </li>
           <li>
-            <input type="button" value="По цене">
+            <button class="by-type">По типу</button>
           </li>
           <li>
-            <input type="button" value="По цене">
+            <button class="by-name">По названию</button>
           </li>
         </ul>
         <div class="order-buttons">
-          <input type="button" class="desc-button" value="">
-          <input type="button" class="asc-button" value="">
+          <button class="desc-button" value=""></button>
+          <button class="asc-button" value=""></button>
         </div>
       </div>
     </section>
@@ -62,7 +132,9 @@
         <li class="template-item">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Вид проекта Sedona">
           <div class="description-window">
-            <h3>Sedona</h3>
+            <a href="#">
+              <h3>Sedona</h3>
+            </a>
             <p>Информационный сайт для туристов</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
@@ -70,15 +142,19 @@
         <li class="template-item">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Вид проекта Pink">
           <div class="description-window">
-            <h3>Pink App</h3>
-            <p>Интернет-магазин  вязаных игрушек</p>
+            <a href="#">
+              <h3>Pink App</h3>
+            </a>
+            <p>Интернет-магазин вязаных игрушек</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="template-item">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Вид проекта Borodinski">
           <div class="description-window">
-            <h3>Barbershop</h3>
+            <a href="#">
+              <h3>Barbershop</h3>
+            </a>
             <p>Сайт салоны красоты. Для мужчин, да.</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
@@ -86,15 +162,19 @@
         <li class="template-item">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Вид проекта Mishka">
           <div class="description-window">
-            <h3>Mishka</h3>
-            <p>Интернет-магазин  вязаных игрушек</p>
+            <a href="#">
+              <h3>Mishka</h3>
+            </a>
+            <p>Интернет-магазин вязаных игрушек</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="template-item">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="Вид проекта A Plus">
           <div class="description-window">
-            <h3>A Plus</h3>
+            <a href="#">
+              <h3>A Plus</h3>
+            </a>
             <p>Лендинг курсов повышения квалификации</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
@@ -102,7 +182,9 @@
         <li class="template-item">
           <img src="img/img-kvast.jpg" width="360" height="576" alt="Вид проекта Kvast">
           <div class="description-window">
-            <h3>Кваст</h3>
+            <a href="#">
+              <h3>Кваст</h3>
+            </a>
             <p>Промо-сайт производителя крафтового кваса</p>
             <a class="button" href="#">9 900 руб.</a>
           </div>
@@ -159,6 +241,27 @@
       </div>
     </section>
   </footer>
+
+  <section class="modal write-us">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="/sendLetter" method="post">
+      <button type="button" class="close">X</button>
+      <p>
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" type="email" name="name" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="user-email">Текст письма:</label>
+        <textarea id="user-email" type="email" name="name" placeholder="В свободной форма"></textarea>
+      </p>
+      <button>Отправить</button>
+    </form>
+  </section>
+
 </body>
 
 </html>
