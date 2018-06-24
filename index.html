@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия «Nerds»</title>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -31,7 +32,6 @@
     <h1 class="visually-hidden">Дизайн-студия «Nerds»</h1>
     <section class="index-header">
       <div class="slider">
-        <input type="radio" name="slide1" id="slide1" checked="checked">
         <div class="slide slide-first">
           <img src="img/slide-phone.png" width="698" height="413" alt="слайд1">
           <div class="features">
@@ -40,7 +40,6 @@
             <a class="button" href="datails.html">Узнать больше</a>
           </div>
         </div>
-        <input type="radio" name="slide2" id="slide2">
         <div class="slide slide-second">
           <img src="img/slide-desktop.png" width="613" height="430" alt="слайд2">
           <div class="features">
@@ -50,7 +49,6 @@
             <a class="button" href="datails.html">Узнать больше</a>
           </div>
         </div>
-        <input type="radio" name="slide3" id="slide3">
         <div class="slide slide-third">
           <img src="img/slide-tablet-and-phone.png" width="759" height="411" alt="слайд3">
           <div class="features">
@@ -61,7 +59,23 @@
           </div>
         </div>
       </div>
-      </div>
+      <ul class="slider-switcher">
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Первый слайд
+          </button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Второй слайд
+          </button>
+        </li>
+        <li class="slide-radio">
+          <button class="slide-btn">
+            Третий слайд
+          </button>
+        </li>
+      </ul>
     </section>
   </header>
   <main class="main-page">
@@ -176,9 +190,9 @@
         <b>NЁRDS DESIGN STUDIO</b>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7(812)275-75-75</p>
-        <a class="button" href="#"></a>
+        <a class="button" href="#">Напишите нам</a>
       </div>
-      <img src="img/map.svg" width="100%" height="300" alt="Карта месторасположения офиса">
+      <img src="img/map.png" width="100%" height="300" alt="Карта месторасположения офиса">
     </section>
     <section class="social">
       <h2 class="visually-hidden">Мы в социальных сетях:</h2>
