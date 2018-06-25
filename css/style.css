@@ -719,14 +719,13 @@ a.main-header-logo:active {
 }
 
 .filtration .grid ul input {
-    display:none;
 }
 
-.filtration .grid li{
+.filtration .grid li {
     margin-bottom: 15px;
 }
 
-.filtration .grid li label{
+.filtration .grid li label {
     font-size: 16px;
     line-height: 20px;
     opacity: 0.4;
@@ -744,6 +743,10 @@ a.main-header-logo:active {
 
 .filtration .grid input:checked + label span {
     background:url("../img/icon-radio-on.svg") left top no-repeat;
+}
+
+.filtration .grid input:focus + label {
+    opacity: 1;
 }
 
 .filtration input + label:hover {
@@ -774,10 +777,6 @@ a.main-header-logo:active {
     list-style: none;
 }
 
-.filtration .features ul input {
-    display:none;
-}
-
 .filtration .features li{
     margin-bottom: 15px;
 }
@@ -801,6 +800,10 @@ a.main-header-logo:active {
     background:url("../img/icon-checkbox-on.svg") left top no-repeat;
 }
 
+.filtration .features input:focus + label {
+    opacity: 1;
+}
+
 .filtration legend {
     margin-left: 2px;
 }
@@ -811,9 +814,8 @@ button.filter-button {
     height: 50px;
 }
 
-button.filter-button:focus {
+button.filter-button:active {
     outline: 0;
-
 }
 
 .view-product {
