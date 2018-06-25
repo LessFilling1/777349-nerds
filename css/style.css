@@ -332,9 +332,20 @@ a.main-header-logo:active {
 }
 
 .about-us-left-block > .services-list {
-    list-style: "-"; /*TODO*/
+    list-style: none;
+    padding-left: 0px; 
 }
+
+.about-us-left-block > .services-list > li > span {
+    display: block;
+    margin: 8px 10px 5px 0px;
+    width: 25px;
+    height: 2px;
+    background: url("../img/icon-red-line.png") left top no-repeat;
+}
+
 .about-us-left-block > .services-list > li {
+    display: flex;
     margin: 10px;
     padding: 10px 0;
 }
@@ -438,11 +449,14 @@ a.main-header-logo:active {
 .address > p {
     margin-top: 18px;
     color: #666666
+
 }
 
 .address > p > a {
     color: #666666
 }
+
+
 .address > p > a:hover {
     color: #fb565a
 }
@@ -507,6 +521,7 @@ a.main-header-logo:active {
 .social-right-block > p {
     margin: 0;
     margin-bottom: 13px;
+
 }
 
 .modal {
@@ -517,6 +532,7 @@ a.main-header-logo:active {
     background-color: #eeeeee;
     padding: 48px 80px;
 }
+
 
 .modal-write-us {
     width: 960px;
@@ -642,6 +658,7 @@ a.main-header-logo:active {
 .price-controls input:first-child{
     margin-right:30px;
     margin-left: 10px; 
+
 }
 
 .price-controls {
