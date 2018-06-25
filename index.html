@@ -4,17 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия «Nerds»</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" /> </head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!--Подсветка сетки:-->
+  <!-- <link rel="stylesheet" type="text/css" href="css/grids.css"/> -->
+</head>
 
 <body>
-  <!--скриншот страницы-->
-  <div style="z-index: -1; text-align: center; position: absolute; width: 99%; opacity: 0.5;">
-    <img src="preview/nerds-index.jpg" style=" margin:0 auto;" /> </div>
+
   <header class="main-header">
     <nav class="main-navigation container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»"> </a>
+      <span class="main-header-logo">
+        <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
+      </span>
       <ul class="site-navigation uppercase">
         <li>
           <a href="info.html">Студия</a>
@@ -44,38 +47,41 @@
               <br>для вашего сайта или мобильного приложения.</p>
             <a class="button button-more" href="details.html">Узнать больше</a>
           </div>
-          <img src="img/slide-phone.png" height="430" alt="слайд_1"> </div>
+          <img src="img/slide-phone.png" height="430" alt="слайд_1">
+        </div>
         <div class="slide slide-second">
           <div class="features">
             <h2>Любим математику как никто другой</h2>
             <p>Никакого креатива, только математические формулы для расчёта идеальных пропорций.</p>
-            <a class="button button-more"
-              href="details.html">Узнать больше</a>
+            <a class="button button-more" href="details.html">Узнать больше</a>
           </div>
-          <img src="img/slide-desktop.png" height="430" alt="слайд_2"> </div>
+          <img src="img/slide-desktop.png" height="430" alt="слайд_2">
+        </div>
         <div class="slide slide-third">
           <div class="features">
             <h2>Только ночь, только хардкор</h2>
             <p>Работать днём как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a class="button button-more"
-              href="details.html">Узнать больше</a>
+            <a class="button button-more" href="details.html">Узнать больше</a>
           </div>
-          <img src="img/slide-tablet_and-phone.png" height="430" alt="слайд_3"> </div>
+          <img src="img/slide-tablet-and-phone.png" height="430" alt="слайд_3">
+        </div>
         <ul class="slider-navigation">
           <li class="slide-radio">
-            <button class="slide-btn"> Первый слайд </button>
+            <button class="button button-slide selected" title="Первый слайд" />
           </li>
           <li class="slide-radio">
-            <button class="slide-btn"> Второй слайд </button>
+            <button class="button button-slide" title="Второй слайд" />
           </li>
           <li class="slide-radio">
-            <button class="slide-btn"> Третий слайд </button>
+            <button class="button button-slide" title="Третий слайд" />
           </li>
         </ul>
       </div>
     </section>
   </header>
+
   <main class="main-page container">
+
     <section class="offers">
       <h2 class="visually-hidden">Наши услуги:</h2>
       <ul class="offer-list">
@@ -122,7 +128,9 @@
       </div>
       <div class="about-us-right-block">
         <img src="img/illustration-logo-nerds.png" width="360" height="210" alt="Логотип дизайн-студии «Nerds»">
-        <p class="uppercase">C 2004 года любим точность во всем:</p>
+        <p class="statistic-slogan uppercase">
+          <b>C 2004 года любим точность во всем:</b>
+        </p>
         <ul class="statistic">
           <li>
             <p class="percentages">146
@@ -151,27 +159,32 @@
       <ul class="partners-list">
         <li class="partners-item">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-html-academy.png" width="260" height="180" alt="Логотип HTML Academy"> </a>
+            <img src="img/logo-html-academy.png" width="260" height="180" alt="Логотип HTML Academy">
+          </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="img/logo-borodinski.png" width="260" height="180" alt="Логотип Borodinski"> </a>
+            <img src="img/logo-borodinski.png" width="260" height="180" alt="Логотип Borodinski">
+          </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="img/logo-a-pink.png" width="260" height="180" alt="Логотип Pink"> </a>
+            <img src="img/logo-a-pink.png" width="260" height="180" alt="Логотип Pink">
+          </a>
         </li>
         <li class="partners-item">
           <a href="#">
-            <img src="img/logo-mishka.png" width="260" height="180" alt="Логотип Mishka"> </a>
+            <img src="img/logo-mishka.png" width="260" height="180" alt="Логотип Mishka">
+          </a>
         </li>
       </ul>
     </section>
-    <hr> </main>
+    <hr>
+  </main>
   <footer class="main-footer">
     <section class="map">
       <h2 class="visually-hidden">Контакты:</h2>
-      <div class="container">
+      <div class="container relative">
         <div class="address-wrapper">
           <div class="address">
             <h3 class="address-header">
@@ -182,22 +195,29 @@
             <p>тел.
               <a href="tel:+78122757575">+7 (812) 275-75-75</a>
             </p>
-            <a class="button button-write-us" href="#">Напишите нам</a>
+            <button type="button" class="button button-write-us" href="#">Напишите нам</button>
           </div>
         </div>
-        <img src="img/map-marker.png" width="367" height="190"> </div>
+        <img class="map-marker" src="img/map-marker.png" width="367" height="190">
+      </div>
     </section>
     <section class="social container">
       <h2 class="visually-hidden">Мы в социальных сетях:</h2>
       <ul class="social-list">
-        <li class="social-item">
-          <a class="social-button" href="#">Вконтакте</a>
+        <li>
+          <a class="social-item" href="#" title="Вконтакте">
+            <img src="img/icon-social-vk.svg" width="25" height="25">
+          </a>
         </li>
-        <li class="social-item">
-          <a class="social-button" href="#">Facebook</a>
+        <li>
+          <a class="social-item" href="#" title="Facebook">
+            <img src="img/icon-social-fb.svg" width="25" height="25">
+          </a>
         </li>
-        <li class="social-item">
-          <a class="social-button" href="#">Instagram</a>
+        <li>
+          <a class="social-item" href="#" title="Instagram">
+            <img src="img/icon-social-insta.svg" width="25" height="25">
+          </a>
         </li>
       </ul>
       <div class="social-right-block">
@@ -208,21 +228,28 @@
       </div>
     </section>
   </footer>
-  <section class="modal write-us">
-    <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <button type="button" class="close" title="Закрыть">X</button>
-      <p>
+
+  <section class="modal modal-write-us container">
+    <div class="modal-write-us-header">
+      <h2>Напишите нам</h2>
+    </div>
+    <button type="button" class="button-close" title="Закрыть">
+      <img src="img/icon-close-cross.svg" width="25" height="25" alt="Закрыть">
+    </button>
+    <form action="https://echo.htmlacademy.ru" method="post" class="write-us-100">
+      <div class="write-us-50 form-element">
         <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="user name" placeholder="Имя Фамилия"> </p>
-      <p>
+        <input id="user-name" required type="text" name="user name" placeholder="Имя Фамилия">
+      </div>
+      <div class="write-us-50 form-element">
         <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="user email" placeholder="email@example.com"> </p>
-      <p>
+        <input id="user-email" required type="email" name="user email" placeholder="email@example.com">
+      </div>
+      <div class="write-us-100 form-element form-element-text">
         <label for="message-text">Текст письма:</label>
-        <textarea id="message-text" type="text" name="message text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button>Отправить</button>
+        <textarea id="message-text" required type="text" name="message text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button class="button button-send">Отправить</button>
     </form>
   </section>
 </body>
