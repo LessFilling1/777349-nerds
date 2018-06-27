@@ -448,11 +448,14 @@ a.main-header-logo:active {
     padding: 20px 0 70px;
 }
 
-.map {
-    background-color: #e9e5dc; 
+.main-footer-index {
+    margin-top: 58px;
+}
+
+.map { 
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
-    background-position-x: 50%;
+    background-position-x: calc(50% - 10px);
     height: 420px;
     width: 100%;
 }
@@ -476,8 +479,9 @@ a.main-header-logo:active {
     position: absolute;
     background: #ffffff;
     width: 320px;
-    margin: 55px 10px 10px 10px;
-    padding-bottom: 55px;
+    margin: 54px 10px 10px 10px;
+    padding-bottom: 48px;
+    padding-top: 5px;
 }
 
 .address {
@@ -799,9 +803,7 @@ a.button-write-us {
     font-size: 55px;
     line-height: 55px;
     padding: 40px 21px 100px 0;
-    text-align: center;
-    min-width: 1200px;
-    
+    text-align: center;    
 }
 
 .main-page-catalog {
@@ -1077,7 +1079,7 @@ button.filter-button:focus {
 
 .description-window {
     text-align: center;
-    padding: 10px 80px 43px 80px;
+    padding: 10px 65px 43px 65px;
     background-color: #eeeeee;
     position: absolute;
     bottom: 0;
@@ -1108,6 +1110,8 @@ button.filter-button:focus {
 .description-window .button-price {
     margin-top: 30px;
     margin-bottom: 1px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper-template {
