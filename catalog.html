@@ -21,32 +21,30 @@
       <a class="main-header-logo" href="index.html" title="Главная страница">
         <img src="img/logo-nerds.svg" width="160" height="65" alt="Логотип дизайн-студии «Nerds»">
       </a>
-      <div class="site-navigation">
-        <ul>
-          <li>
-            <a class="navigation-item" href="#">Студия</a>
-          </li>
-          <li>
-            <a class="navigation-item" href="#">Клиенты</a>
-          </li>
-          <li>
-            <a class="navigation-item selected" href="catalog.html">Магазин</a>
-          </li>
-          <li>
-            <a class="navigation-item" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="site-navigation">
+        <li>
+          <a class="navigation-item" href="#">Студия</a>
+        </li>
+        <li>
+          <a class="navigation-item" href="#">Клиенты</a>
+        </li>
+        <li>
+          <span class="navigation-item selected">Магазин</span>
+        </li>
+        <li>
+          <a class="navigation-item" href="#">Контакты</a>
+        </li>
+      </ul>
       <a class="navigation-item cart-item" href="#">Корзина</a>
     </nav>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="container">Магазин готовых шаблонов</h1>
   </header>
   <main class="main-page main-page-catalog container">
     <section class="filtration">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <div class="cost">
-          <b>Стоимость:</b>
+          <span>Стоимость:</span>
           <div class="range-filter">
             <div class="range-controls">
               <div class="scale">
@@ -68,19 +66,19 @@
             <li>
               <input type="radio" name="grid-type" value="adaptive" id="filter-grid-adaptive" checked>
               <label for="filter-grid-adaptive">
-                <span></span>Адаптивная
+                Адаптивная
               </label>
             </li>
             <li>
               <input type="radio" name="grid-type" value="fixed" id="filter-grid-fixed">
               <label for="filter-grid-fixed">
-                <span></span>Фиксированная
+                Фиксированная
               </label>
             </li>
             <li>
               <input type="radio" name="grid-type" value="flexed" id="filter-grid-flexed">
               <label for="filter-grid-flexed">
-                <span></span>Резиновая
+                Резиновая
               </label>
             </li>
           </ul>
@@ -91,31 +89,31 @@
             <li>
               <input type="checkbox" name="slider" id="filter-features-slider" checked>
               <label for="filter-features-slider">
-                <span></span>Слайдер
+                Слайдер
               </label>
             </li>
             <li>
               <input type="checkbox" name="advantages" id="filter-features-advantages">
               <label for="filter-features-advantages">
-                <span></span>Блок преимуществ
+                Блок преимуществ
               </label>
             </li>
             <li>
               <input type="checkbox" name="news" id="filter-features-news" checked>
               <label for="filter-features-news">
-                <span></span>Новости
+                Новости
               </label>
             </li>
             <li>
               <input type="checkbox" name="gallery" id="filter-features-gallery">
               <label for="filter-features-gallery">
-                <span></span>Галерея
+                Галерея
               </label>
             </li>
             <li>
               <input type="checkbox" name="cart" id="filter-features-cart">
               <label for="filter-features-cart">
-                <span></span>Корзина
+                Корзина
               </label>
             </li>
           </ul>
@@ -315,7 +313,7 @@
           <label for="message-text">Текст письма:</label>
           <textarea id="message-text" required name="message text" placeholder="В свободной форме"></textarea>
         </div>
-        <button class="button button-send">Отправить</button>
+        <button type="submit" class="button button-send">Отправить</button>
       </form>
     </section>
   </div>
