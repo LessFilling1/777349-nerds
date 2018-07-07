@@ -769,7 +769,7 @@ a.button-write-us {
     width: 58px;
     height: 22px;
     padding: 8px 10px;
-    margin-left: 8px;
+    margin-left: 10px;
     border: none;
     background: #eeeeee;
     font-size: 16px;
@@ -777,14 +777,19 @@ a.button-write-us {
     color: #283136;
 }
 
-.price-controls input:first-child{
-    margin-right: 30px;
-    margin-left: 10px; 
+.price-controls label:first-child{
+    margin-right: 28px; 
 }
 
 .price-controls {
     font-size: 16px;
     line-height: 22px;
+}
+
+.price-controls .price-label-range {
+    margin: 0;
+    padding-left: 0; 
+    padding-right: 0;
 }
 /*Конец*/
 
@@ -792,9 +797,10 @@ a.button-write-us {
 
 .main-header > h1 {
     margin: 37px auto;
+    margin-bottom: 28px;
     font-size: 55px;
     line-height: 55px;
-    padding: 40px 21px 99px 0;
+    padding: 40px 21px 108px 0;
     text-align: center;    
 }
 
@@ -840,7 +846,6 @@ a.button-write-us {
 }
 
 .grid ul input {
-    display:none;
 }
 
 .grid li {
@@ -853,20 +858,25 @@ a.button-write-us {
     opacity: 0.4;
 }
 
-.grid input + label {
+.grid-input + label {
     background: url("../img/icon-radio-off.svg") left no-repeat;
     cursor: pointer;
+    
 }
 
-.grid input:checked + label {
+.grid-input:checked + label {
     background: url("../img/icon-radio-on.svg") left no-repeat;
 }
 
-.filtration input + label:hover {
+.grid-input:focus + label {
+    outline: auto;
+}
+
+.grid-input + label:hover {
     opacity: 1;
 }
 
-.filtration label {
+.filtration label:not(.price-label-range) {
     padding: 8px 6px 8px 35px;
     font-size: 16px;
     line-height: 20px;
@@ -891,10 +901,6 @@ a.button-write-us {
     list-style: none;
 }
 
-.features ul input { /*TODO: убрать 3 селектора */
-    display:none;
-}
-
 .features li {
     margin-bottom: 17px;
 }
@@ -908,8 +914,16 @@ a.button-write-us {
     margin-bottom: 5px;
 }
 
-.features input:checked + label {
+.features-input:checked + label {
     background: url("../img/icon-checkbox-on.svg") left 50%  no-repeat;
+}
+
+.features-input:focus + label {
+    outline: auto;
+}
+
+.features-input + label:hover {
+    opacity: 1;
 }
 
 .filtration legend {
