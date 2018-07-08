@@ -1,31 +1,30 @@
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     src:
-        url('fonts/roboto.woff2') format('woff2'),
-        url('fonts/roboto.woff') format('woff');
+        url("fonts/roboto.woff2") format("woff2"),
+        url("fonts/roboto.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     src: 
-        url('fonts/robotomedium.woff2') format('woff2'),
-        url('fonts/robotomedium.woff') format('woff');
+        url("fonts/robotomedium.woff2") format("woff2"),
+        url("fonts/robotomedium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: "Roboto";
     src:
-    url('fonts/robotobold.woff2') format('woff2'),
-    url('fonts/robotobold.woff') format('woff');
+    url("fonts/robotobold.woff2") format("woff2"),
+    url("fonts/robotobold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
-
 
 .visually-hidden {
     position: absolute;
@@ -53,6 +52,7 @@
 .button:hover {
     background: #e74246;    
 }
+
 .button:active {
     background: #d7373b;    
     color: rgba(255, 255, 255, 0.30);
@@ -62,9 +62,11 @@
 .button-green {
     background: #00ca74;
 }
+
 .button-green:hover {
     background: #00bc6c;
 }
+
 .button-green:active {
     background: #00aa62;
     box-shadow: inset 0px 3px 0px 0px #009958;
@@ -73,9 +75,11 @@
 .button-yellow {
     background: #efc849;
 }
+
 .button-yellow:hover {
     background: #eab534;
 }
+
 .button-yellow:active {
     background: #e5a722;
     box-shadow: inset 0px 3px 0px 0px #ce961f;
@@ -84,7 +88,7 @@
 body {   
     margin: 0;
     padding: 0; 
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     margin-left: 20px;
 }
@@ -118,12 +122,15 @@ a {
     line-height: 0;
     margin: 0 10px 1px;
 }
+
 a.main-header-logo {
     opacity: 1.0;
 }
+
 a.main-header-logo:hover { 
     opacity: 0.8;
 }
+
 a.main-header-logo:active {
     opacity: 0.3;
 }
@@ -135,13 +142,14 @@ a.main-header-logo:active {
     display: flex;    
     margin-bottom: 15px; 
     display: flex;
-
     margin-left: 186px;
     list-style: none;    
 }
+
 .site-navigation li {
     margin: 0 40px 0 6px;
 }
+
 .navigation-item {
     text-transform: uppercase; 
     font-weight: 500; 
@@ -150,16 +158,20 @@ a.main-header-logo:active {
     color: black;
     opacity: 1.0;
 }
+
 .navigation-item:hover:not(.selected) {
     color: #fb565a;
 }
+
 .navigation-item:active:not(.selected) {
     color: black;
     opacity: 0.3;
 }
+
 .site-navigation .selected {
     position: relative;
 }
+
 .site-navigation .selected::after {
     content: "";
     height: 2px;
@@ -169,6 +181,7 @@ a.main-header-logo:active {
     left: 0px;
     top: 28px;
 }
+
 .cart-item {
     display: flex;    
     align-items: center;
@@ -183,6 +196,7 @@ a.main-header-logo:active {
     padding-top: 80px;
     text-align: left;
 }
+
 .cart > img {
     margin-left: 55px; 
     margin-right: 20px; 
@@ -228,21 +242,26 @@ a.main-header-logo:active {
     z-index: 10;
     top: 311px;
 }
+
 .slide-first .button-slide {
     left: 541px;
 }
+
 .slide-second .button-slide {
     left: 576px;
 }
+
 .slide-third .button-slide {
     left: 611px;
 }
+
 .button-slide:hover,
 .button-slide:active,
 .button-slide:checked + label:hover::before  {
     background: white;
     box-shadow: unset;
 }
+
 .button-slide::before {
     content: "";
     position: absolute;
@@ -250,13 +269,16 @@ a.main-header-logo:active {
     height: 4px;
     border-radius: 50%;
 }
+
 .button-slide:checked + label::before {
     border: 2px solid #c1c1c1;
 }
+
 .button-slide:hover::before {
     background-color: #c1c1c1;
     border: 2px solid #c1c1c1;
 }
+
 .button-slide:active::before {
    opacity: 0.75;
 }
@@ -275,12 +297,14 @@ a.main-header-logo:active {
     z-index: 5;
     max-width: 550px;
 }
+
 .feature > h2 {
     font-size: 55px;
     font-weight: 500;
     line-height: 55px;
     margin: 73px 10px 0 10px;
 }
+
 .feature > p {
     margin: 27px 10px 0 10px;
     font-size: 16px;
@@ -301,9 +325,12 @@ a.main-header-logo:active {
     height: 500px;
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    padding-right: 90px
 }
+
 .offer-list li {
-    margin: 79px 100px 0 0;
+    margin: 79px 0 0 0;
     width: 300px;
 }
 
@@ -368,6 +395,7 @@ a.main-header-logo:active {
     padding-left: 0px; 
     list-style: none;
 }
+
 .services-list > li {
     margin: 10px 0;
     padding: 10px 0 10px 36px;
@@ -399,12 +427,14 @@ a.main-header-logo:active {
     text-align: left;
     margin: 20px 10px 0 10px;
 }
+
 .statistic p.percentages {
     margin: 0 11px; 
     font-size: 45px;
     line-height: 45px;
     font-weight: 700; 
 }
+
 .statistic sup {
     font-size: 28px;
 }
@@ -412,6 +442,7 @@ a.main-header-logo:active {
 .partners {
     height: 173px;
 }
+
 .partners-list {
     margin: 0;
     margin-top: -10px; 
@@ -425,9 +456,11 @@ a.main-header-logo:active {
 .partners-item a  {
     opacity: 0.2;
 }
+
 .partners-item a:hover {
     opacity: 1.0; 
 }
+
 .partners-item a:active {
     opacity: 1.0; 
 }
@@ -492,21 +525,21 @@ a.main-header-logo:active {
     padding-right: 10px;
 }
 
-.address a {
+.address a:not(.button) {
     color: #666666;
     text-decoration: unset;
 } 
 
-.address a:hover {
+.address a:hover:not(.button) {
     color: #fb565a;
 } 
 
-.address button {
+.address a {
     line-height: 19px;
     color: #666666;
 }
 
-button.button-write-us {
+a.button-write-us {
     margin-top: 37px;
     width: 220px;
     height: 50px;
@@ -540,16 +573,20 @@ button.button-write-us {
     background-position: 50% 50%;
     background-repeat: no-repeat; 
 }
+
 .social-item:hover {
     background-color: #e74246;
 }
+
 .social-item:active {
     background-color: #d7373b; 
     box-shadow: inset 0px 3px 0px 0px #c13135;
 }
+
 .social-item img {
     margin: auto;
 }
+
 .social-item:active img {
     opacity: 0.3;
 }
@@ -613,6 +650,7 @@ button.button-write-us {
     font-size: 45px;
     line-height: 45px;
 }
+
 .modal-write-us > form {
     display: flex;
     flex-wrap: wrap;
@@ -688,12 +726,14 @@ button.button-write-us {
     margin: 8px 20px 0 20px;
     width: 100%;
 }
+
 .form-element > textarea {
     width: 760px;
     height: 115px;
     padding: 10px;
     resize: none;
 }
+
 .button-send {
     margin: 24px 20px 0 20px;
     width: 260px;
@@ -706,9 +746,11 @@ button.button-write-us {
     background-color: transparent;
     opacity: 0.3;
 }
+
 .button-close:hover {
     opacity: 1.0;
 }
+
 .button-close:active {
     opacity: 0.1;
 }
@@ -719,6 +761,7 @@ button.button-write-us {
     margin: 0;
     margin-bottom: 10px;
 }
+
 .range-controls {
     position: relative;
     height: 80px;
@@ -728,6 +771,7 @@ button.button-write-us {
     border-radius: 5px;
     overflow: hidden;
 }
+
 .scale {
     margin-top: 39px;
     height: 2px;
@@ -939,6 +983,7 @@ button.filter-button:focus {
     display: flex;
     width: 760px;
     height: 40px;
+    justify-content: space-between;
 }
 
 .sorting p {
@@ -948,7 +993,7 @@ button.filter-button:focus {
 }
 
 .sort-button-list {
-    margin: 10px 0px 8px 214px;
+    margin: 10px 0px 8px 0px;
 }
 
 .sort-button-list a{    
@@ -1029,6 +1074,7 @@ button.filter-button:focus {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
+    justify-content: space-between;
 }
 
 .template-item {
@@ -1039,10 +1085,6 @@ button.filter-button:focus {
     list-style: none;
     position: relative;
     padding-top: 40px;
-}
-
-.template-item:nth-child(2n) {
-    margin-left: 40px; 
 }
 
 .template-item::before {
@@ -1134,6 +1176,10 @@ button.filter-button:focus {
 
 }
 
+.pagination-item-previous {
+    display: none;
+}
+
 .pagination-list {
     list-style: none;
     display: flex;
@@ -1175,4 +1221,3 @@ button.filter-button:focus {
     box-shadow: inset 0 0 0px 3px #dbdbdb;
     background: white;
 }
-
