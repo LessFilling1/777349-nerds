@@ -493,7 +493,11 @@ a.main-header-logo:active {
 .address a {
     color: #666666;
     text-decoration: unset;
-}
+} 
+
+.address a:hover {
+    color: #fb565a;
+} 
 
 .address button {
     line-height: 19px;
