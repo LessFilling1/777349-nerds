@@ -490,12 +490,14 @@ a.main-header-logo:active {
     padding-right: 10px;
 }
 
+.address a {
+    color: #666666;
+    text-decoration: unset;
+}
+
 .address button {
     line-height: 19px;
     color: #666666;
-}
-.address button:hover {
-    color: #fb565a;
 }
 
 button.button-write-us {
@@ -841,7 +843,6 @@ button.button-write-us {
 .grid-input + label {
     background: url("../img/icon-radio-off.svg") left no-repeat;
     cursor: pointer;
-    
 }
 
 .grid-input:checked + label {
@@ -852,7 +853,7 @@ button.button-write-us {
     outline: auto;
 }
 
-.grid-input + label:hover {
+input.grid-input + label:hover {
     opacity: 1;
 }
 
@@ -1095,6 +1096,10 @@ button.filter-button:focus {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.button.button-price:active {
+    color: white;
 }
 
 .wrapper-template {
