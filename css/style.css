@@ -493,6 +493,9 @@ a.main-header-logo:active {
 }
 
 .map { 
+    background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-position-x: 50%;
     height: 420px;
     width: 100%;
 }
