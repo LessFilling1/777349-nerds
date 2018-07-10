@@ -73,7 +73,7 @@ a.main-header-logo:active{opacity:.3}
 .partners-list{margin:0;margin-top:-10px;padding:0 10px;display:flex;justify-content:space-between;list-style:none}
 .partners-item a{opacity:.2}
 .partners-item a:hover{opacity:1}
-.partners-item a:active{opacity:1}
+.partners-item a:active{opacity:.1}
 .main-footer{margin-top:25px;padding:20px 0 70px}
 .main-footer-index{margin-top:58px}
 .map{height:420px;width:100%}
