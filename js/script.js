@@ -1,13 +1,16 @@
+var modalbg = document.querySelector("#modal-write-us-bg");
 var modal = document.querySelector("#modal-write-us");
 var closeButton = document.querySelector("#button-close");
 var openButton = document.querySelector("#button-open");
 
 closeButton.addEventListener("click", function () {
-  modal.classList.toggle("closed");
+  modal.classList.toggle("modal-transform");
+  modalbg.classList.toggle("closed");
 });
 
 openButton.addEventListener("click", function () {
-  modal.classList.toggle("closed");
+  modal.classList.toggle("modal-transform");
+  modalbg.classList.toggle("closed");
 
   var name = document.querySelector("#user-name");
   var email = document.querySelector("#user-email");
