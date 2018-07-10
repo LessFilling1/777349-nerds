@@ -24,6 +24,100 @@
     font-weight: 700;
     font-style: normal;
 }
+  
+@-webkit-keyframes my-opacity-transform {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+    10% {
+        transform: scale(0.1);
+        opacity: .1
+    }
+    20% {
+        transform: scale(0.2);
+        opacity: .2
+    }
+    30% {
+        transform: scale(0.3);
+        opacity: .3
+    }
+    40% {
+        transform: scale(0.4);
+        opacity: .4
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: .5
+    }
+    60% {
+        transform: scale(0.6);
+        opacity: .6
+    }
+    70% {
+        transform: scale(0.7);
+        opacity: .7
+    }
+    80% {
+        transform: scale(0.8);
+        opacity: .8
+    }
+    90% {
+        transform: scale(0.9);
+        opacity: .9
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes my-opacity-transform {
+    0% {
+        transform: scale(0);
+        opacity: 0
+    }
+    10% {
+        transform: scale(0.1);
+        opacity: .1;
+    }
+    20% {
+        transform: scale(0.2);
+        opacity: .2
+    }
+    30% {
+        transform: scale(0.3);
+        opacity: .3
+    }
+    40% {
+        transform: scale(0.4);
+        opacity: .4
+    }
+    50% {
+        transform: scale(0.5);
+        opacity: .5
+    }
+    60% {
+        transform: scale(0.6);
+        opacity: .6
+    }
+    70% {
+        transform: scale(0.7);
+        opacity: .7
+    }
+    80% {
+        transform: scale(0.8);
+        opacity: .8
+    }
+    90% {
+        transform: scale(0.9);
+        opacity: .9
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
 
 .visually-hidden {
     position: absolute;
@@ -112,7 +206,7 @@ a {
 }
 
 .main-navigation {
-    height: 115px;
+    min-height: 115px;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -138,12 +232,12 @@ a.main-header-logo:active {
 .site-navigation {
     margin: 0;
     padding: 0; 
-    width: 800px;
-    display: flex;    
+    width: 800px;  
     margin-bottom: 15px; 
     display: flex;
     margin-left: 186px;
-    list-style: none;    
+    list-style: none;  
+    flex-wrap: wrap;  
 }
 
 .site-navigation li {
@@ -206,7 +300,7 @@ a.main-header-logo:active {
 .slider {
     position: relative;
     list-style: none;
-    height: 430px;
+    min-height: 430px;
     padding: 0;
     margin: 0;
 }
@@ -329,6 +423,8 @@ a.main-header-logo:active {
     font-size: 16px;
     line-height: 24px;
     max-width: 420px;
+    max-height: 100px;
+    overflow: overlay;
 }
 
 .button-more {
@@ -499,6 +595,7 @@ a.main-header-logo:active {
     height: 420px;
     width: 100%;
 }
+
 
 .map .container {
     position: relative;
@@ -1217,6 +1314,7 @@ button.filter-button {
     display: flex;
     padding: 0;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 .button-gray {  
@@ -1261,100 +1359,4 @@ button.filter-button {
     animation-duration: 0.7s; 
     -webkit-animation-timing-function: ease;
     animation-timing-function: ease;  
-}
-
-@keyframes my-opacity-transform {
-    0% {
-        transform: scale(0);
-        opacity: 0
-    }
-    10% {
-        transform: scale(0.1);
-        opacity: .1;
-        transform: scale(0.1);
-        opacity: .1
-    }
-    20% {
-        transform: scale(0.2);
-        opacity: .2
-    }
-    30% {
-        transform: scale(0.3);
-        opacity: .3
-    }
-    40% {
-        transform: scale(0.4);
-        opacity: .4
-    }
-    50% {
-        transform: scale(0.5);
-        opacity: .5
-    }
-    60% {
-        transform: scale(0.6);
-        opacity: .6
-    }
-    70% {
-        transform: scale(0.7);
-        opacity: .7
-    }
-    80% {
-        transform: scale(0.8);
-        opacity: .8
-    }
-    90% {
-        transform: scale(0.9);
-        opacity: .9
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1
-    }
-}
-  
-@-webkit-keyframes my-opacity-transform {
-    0% {
-        transform: scale(0);
-        opacity: 0
-    }
-    10% {
-        transform: scale(0.1);
-        opacity: .1
-    }
-    20% {
-        transform: scale(0.2);
-        opacity: .2
-    }
-    30% {
-        transform: scale(0.3);
-        opacity: .3
-    }
-    40% {
-        transform: scale(0.4);
-        opacity: .4
-    }
-    50% {
-        transform: scale(0.5);
-        opacity: .5
-    }
-    60% {
-        transform: scale(0.6);
-        opacity: .6
-    }
-    70% {
-        transform: scale(0.7);
-        opacity: .7
-    }
-    80% {
-        transform: scale(0.8);
-        opacity: .8
-    }
-    90% {
-        transform: scale(0.9);
-        opacity: .9
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1
-    }
 }
