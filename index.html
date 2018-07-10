@@ -6,6 +6,7 @@
   <title>Дизайн-студия «Nerds»</title>
   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 
 <body>
@@ -170,6 +171,7 @@
 
   <footer class="main-footer main-footer-index">
     <section class="map">
+      <div id="map-iframe" class="map-iframe"></div>
       <h2 class="visually-hidden">Контакты:</h2>
       <div class="contacts container">
         <div class="address-wrapper">
@@ -211,29 +213,29 @@
     </section>
   </footer>
 
-  <div id="modal-write-us-bg" class="modal-container closed">
-    <section id="modal-write-us" class="modal modal-write-us container">
-      <h2>Напишите нам</h2>
-      <a href="#modal-write-us" id="button-close" class="button-close" title="Закрыть">
-        <img src="img/icon-close-cross.svg" width="25" height="25" alt="Закрыть">
-      </a>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="form-element">
-          <label for="user-name">Ваше имя:</label>
-          <input id="user-name" required type="text" name="user name" placeholder="Имя Фамилия">
-        </div>
-        <div class="form-element">
-          <label for="user-email">Ваш e-mail:</label>
-          <input id="user-email" required type="email" name="user email" placeholder="email@example.com">
-        </div>
-        <div class="form-element form-element-text">
-          <label for="message-text">Текст письма:</label>
-          <textarea id="message-text" required name="message text" placeholder="В свободной форме"></textarea>
-        </div>
-        <button type="submit" id="button-send" class="button button-send">Отправить</button>
-      </form>
-    </section>
-  </div>
+  <section id="modal-write-us" class="modal modal-write-us modal-transform closed container">
+    <h2>Напишите нам</h2>
+    <a href="#modal-write-us" id="button-close" class="button-close" title="Закрыть">
+      <img src="img/icon-close-cross.svg" width="25" height="25" alt="Закрыть">
+    </a>
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="form-element">
+        <label for="user-name">Ваше имя:</label>
+        <input id="user-name" required type="text" name="user name" placeholder="Имя Фамилия">
+      </div>
+      <div class="form-element">
+        <label for="user-email">Ваш e-mail:</label>
+        <input id="user-email" required type="email" name="user email" placeholder="email@example.com">
+      </div>
+      <div class="form-element form-element-text">
+        <label for="message-text">Текст письма:</label>
+        <textarea id="message-text" required name="message text" placeholder="В свободной форме"></textarea>
+      </div>
+      <button type="submit" id="button-send" class="button button-send">Отправить</button>
+    </form>
+  </section>
+
+  <div id="modal-write-us-bg" class="modal-container closed"></div>
 
   <script src="./js/script.js"></script>
 </body>
