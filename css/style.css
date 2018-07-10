@@ -486,12 +486,11 @@ a.main-header-logo:active {
 .map-iframe {
     min-width: 1200px;
     width: 100%; 
-    height: 420px; 
+    height: 416px; 
     padding: 0; 
     margin: 0;
     position: absolute;
     z-index: 1;
-    
 }
 
 .contacts {
@@ -910,6 +909,11 @@ a.button-write-us {
     outline: auto;
 }
 
+input.grid-input:disabled + label {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
 input.grid-input + label:hover {
     opacity: 1;
 }
@@ -962,6 +966,11 @@ input.grid-input + label:hover {
 
 .features-input + label:hover {
     opacity: 1;
+}
+
+input.features-input:disabled + label {
+    cursor: not-allowed;
+    opacity: 0.3;
 }
 
 .filtration legend {
