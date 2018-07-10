@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: "Roboto";
     src:
@@ -214,10 +213,13 @@ a.main-header-logo:active {
 
 .slider > .slide  {
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .slide-content {    
     display: none;
+    height: 100%;
 }
 
 .slider-navigation {
@@ -256,6 +258,21 @@ a.main-header-logo:active {
     left: 611px;
 }
 
+.slide-first .slide-content {
+    background: url("../img/slide-phone.png") left no-repeat;
+    background-position: 407px -1px;
+}
+
+.slide-second .slide-content {
+    background: url("../img/slide-desktop.png") left no-repeat;
+    background-position: 407px -1px;
+}
+
+.slide-third .slide-content {
+    background: url("../img/slide-tablet-and-phone.png") left no-repeat;
+    background-position: 407px -1px;
+}
+
 .button-slide:hover,
 .button-slide:active,
 .button-slide:checked + label:hover::before  {
@@ -286,6 +303,7 @@ a.main-header-logo:active {
 
 .button-slide:checked ~ .slide-content {
     display: flex;
+
 }
 
 .slide-content > img {
