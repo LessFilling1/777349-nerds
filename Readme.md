@@ -1,3 +1,4 @@
+# https://lessfilling1.github.io/777349-nerds/
 # Личный проект «Нёрдс»
 
 * Студент: [Sergey Avraimov](https://up.htmlacademy.ru/htmlcss/21/user/777349).
